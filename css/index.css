@@ -1,0 +1,359 @@
+.clear{clear: both;} /*清除浮动*/
+/*头部*/
+#header{
+	width: 1440px;
+	background-color: rgba(0,255,0,.7);
+	/*居中*/
+	margin: 0px auto;
+}
+/*logo*/
+#header>.logo{
+	width: 1440px;
+	height: 148px;
+	/*背景图片*/
+	background-image:url(../img/bg-img.jpg);
+	/*内容居中*/
+	text-align: center;
+}
+#header>.logo img{
+	/*上边距*/
+	margin-top: 16px;
+}
+/*导航*/
+#header .nav{
+	width: 1440px;
+	height: 44px;
+	background-color: #363636;
+}
+#header .nav ul{
+	width: 900px;
+	margin: 0 auto;
+	/*background-color: #f00;*/
+}
+#header .nav li{
+	float: left;
+	color: #fff;
+	width: 76px;  /*导航列表宽度*/
+	height: 42px;
+	/*background-color: #999;*/
+	margin-right: 64px;  /*右边距*/
+	text-align: center; /*文本居中*/
+	line-height: 42px;
+	border-bottom: 2px solid #363636; /*下边框*/
+}
+#header .nav li:hover{
+	border-bottom-color: #fff;
+	color: #c5842d;
+}
+/*头部结束*/
+
+/*内容部分开始*/
+
+#content{
+	width: 1440px;
+	/*background-color: #024a99;*/
+	margin:0 auto; /*居中*/
+}
+/*轮播图*/
+#content .banner{
+	position: relative;
+	height: 672px;
+	overflow: hidden;
+}
+#content .banner .big{
+	width: 100%;
+}
+#content #banner-txt{
+	/*定位*/
+	position: absolute;
+	left: 236px;
+	top: 204px;
+}
+/*焦点*/
+#content .focus{
+	width: 80px;
+	/*background-color: #f00;*/
+}
+#content .focus li{
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: #6c6c6c;
+	float: left;
+	margin-right: 14px;
+	cursor: pointer; /*鼠标指针形状*/
+}
+#content .focus{
+	position: absolute;
+	left: 680px;
+	bottom: 40px;
+}
+
+/*男女腕表*/
+#content .type{
+	height: 710px;
+	background-image: url(../img/bg-img.jpg);   /*背景图片*/
+	overflow: hidden;   /*隐藏超出部分*/
+}
+#content .type .pic{
+	width: 510px;
+	height: 710px;
+	/*background-color: #3c38a8;*/
+	float: left;
+}
+#content .type .intro{
+	width: 930px;
+	height: 710px;
+	/*background-color: #05fec2;*/
+	float: left;
+}
+#content .type .intro .title{
+	width: 700px;
+	height: 90px;
+	border-left: 1px solid #c2c1c1;
+	padding-left: 20px;		/*左内边距*/
+	margin-top: 146px;
+}
+#content .type .title h1{
+	font-family: '微软雅黑';
+	font-size: 20px;
+	font-weight: bold;  /*字体加粗*/
+}
+#content .type .title p{
+	font-family: '微软雅黑';
+	font-size: 14px;
+	line-height: 24px;
+}
+/*男女腕表介绍*/
+#content .type .m-watch{
+	width: 270px;
+	float: left;
+	margin:100px 136px 0 25px;
+}
+#content .type .w-watch{
+	width: 270px;
+	float: left;
+	margin:100px 0 0 0;
+}
+#content .type .m-watch h1,.w-watch h1{
+	font-family: '微软雅黑';
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 48px;
+}
+#content .type .m-watch h2,.w-watch h2{
+	font-family: '微软雅黑';
+	font-size: 16px;
+	line-height: 36px;
+	color: #3e3e3e;
+}
+#content .type .m-watch p,.w-watch p{
+	font-family: '微软雅黑';
+	font-size: 10px;
+	line-height: 18px;
+	color: #787878;
+}
+#content .type .m-watch a,.w-watch a{
+	font-family: '微软雅黑';
+	font-size: 16px;
+	line-height: 24px;
+	display: inline-block;
+	margin-top: 15px;
+}
+#content .type .m-watch img,.w-watch img{
+	margin-top: 36px;
+}
+/*鼠标移入div，下面的图片出现阴影*/
+#content .type .m-watch:hover img,.w-watch:hover img{
+	box-shadow: 0px 2px 10px 2px rgba(0,0,0,.3);
+}
+/*鼠标移入，超链接变色*/
+#content .type .m-watch:hover a,.w-watch:hover a{
+	color: #c5842d;
+}
+/*工艺介绍*/
+#content .tech{
+	width: 1440px;
+	height: 700px;
+	background-image: url(../img/pic.jpg);
+	overflow: hidden;
+}
+#content .tech .tech-intro{
+	width: 400px;
+	margin:160px 0 0 920px;
+}
+#content .tech .tech-intro h1{
+	font-family: '微软雅黑';
+	font-size: 24px;
+	font-weight: bold;
+	color: #c5842d;
+}
+#content .tech .tech-intro p{
+	font-family: '微软雅黑';
+	font-size: 12px;
+	color: #dadada;
+	margin-top: 30px;
+}
+#content .tech .tech-intro a{
+	width: 112px;
+	height: 28px;
+	text-align: center;
+	line-height: 28px;
+	border: 1px solid #c5842d;
+	color: #c5842d;
+	display: block;
+	margin-top: 50px;
+	float: right;
+	/*Snipaste截图软件*/
+}
+/*男士手表展示*/
+#content .show{
+	width: 1440px;
+	/*height: 713px;*/
+	background-image: url(../img/bg-img.jpg);
+	padding: 40px 0;
+	text-align: center;
+}
+#content .show>h1{
+	font-family: 微软雅黑;
+	font-size: 24px;
+	font-weight: bold;
+}
+#content .show>p{
+	font-family: 微软雅黑;
+	font-size: 16px;
+	margin: 16px 0;
+}
+/*手表展示轮播*/
+#content .show .list{
+	width: 1032px;
+	padding: 20px 134px;
+	/*border: thin solid #f00;*/
+	margin: 0 auto;
+	position: relative;
+}
+#content .show .list li{
+	width: 258px;
+	float: left;
+	padding: 30px 0 50px;
+	margin-bottom: 30px;
+	/*background-color: #a43d62;*/
+}
+#content .show .list li h2{
+	font-family: '微软雅黑';
+	font-weight: bold;
+	font-size: 16px;
+	opacity: 0;	/*透明度*/
+}
+#content .show .list li img{
+	height: 289px;
+	margin-top: 40px;
+}
+#content .show .list li:hover{ /*伪类效果*/
+	background-color: #fff;
+	box-shadow: 0px 2px 10px 2px rgba(0,0,0,.3);
+}
+#content .show .list li:hover h2{
+	opacity: 1;
+}
+/*箭头定位*/
+#content .show .list .l-arrow{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -18px;
+}
+#content .show .list .r-arrow{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -18px;
+}
+/*more*/
+#content .show .more{
+	font-size:16px;
+	color: #979696;
+	border:1px solid #e2e2e1; 
+	padding: 7px 14px;
+}
+
+/*选择表款*/
+#content .choice{
+	width: 1440px;
+	height: 744px;
+	overflow: hidden;
+}
+.choice .txt{
+	width: 600px;
+	height: 200px;
+	/*border: 1px solid #f00;*/
+	color: #fff;
+	text-align: center;
+	margin-top: 290px;
+	padding-left: 50px;
+}
+.choice .txt>h1{
+	font-family: '微软雅黑';
+	font-weight: bold;
+	font-size: 48px;
+}
+.choice .txt>h2{
+	font-family: '微软雅黑';
+	font-size: 27px;
+	margin: 24px 0 30px;
+}
+.choice .txt>a{
+	padding: 10px 36px;
+	border: 1px solid #c5842d;
+	color: #c5842d;
+}
+/*内容部分结束*/
+
+/*页脚开始*/
+#footer{
+	width: 1440px;
+	margin: 0 auto;
+}
+#footer .info{
+	width: 1440px;
+	padding: 70px 0 50px;
+	background-color: #000;
+}
+#footer .info .info-list{
+	width: 1000px;
+	margin: 0 auto;
+	/*border: 1px solid #f00;*/
+}
+#footer .info .info-list ul{
+	float: left;
+	/*border:1px solid #f00;*/
+	margin-right: 70px;
+}
+#footer .info-list ul li{
+	color: #858585;
+	font-size: 12px;
+	line-height: 23px;
+	text-align: center;
+}
+#footer .info-list .f-nav{
+	color: #cdcccc;
+	font-size: 18px;
+	line-height: 36px;
+	margin-bottom: 6px;
+}
+/*地址、版权等*/
+#footer .addr{
+	width: 1440px;
+	padding:16px 0;
+	background-color: #1e1e1e;
+}
+#footer .addr ul li{
+	float: left;
+	color: #b1b1ae;
+	font-family: '宋体';
+	font-size: 12px;
+	margin-right: 60px;
+}
+#footer .addr ul li:first-child{
+	margin-left: 200px;
+}
